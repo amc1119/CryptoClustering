@@ -10,6 +10,8 @@ This activity was conducted to predict if cryptocurrencies are affected by 24-ho
 
 2. Converted the scaled data into a DataFrame setting the index as the "coin-id" index from the original DataFrame.
 
+![Local Image](Data_Images/scaled_data_df.png)
+
 # Determine the best k-value using the original scaled data DataFrame.
 * Used the elbow method.
 
