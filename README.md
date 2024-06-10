@@ -51,6 +51,8 @@ This activity was conducted to predict if cryptocurrencies are affected by 24-ho
 
         a. Analyized the difference between this k value and the one found using the original data.
 
+            Note: It does not differ from the best k value found using the original data.
+
 # Use K-means on the PCA Data to Cluster Cryptocurrencies
 * Used the best k-value to cluster the cryptocurrencies on the PCA data.
 
@@ -65,5 +67,7 @@ This activity was conducted to predict if cryptocurrencies are affected by 24-ho
 ![Local Image](Data_Images/pca_data_scatter.png)
 
     i. Discovered the impact of using K-means with fewer features to cluster the data. 
+
+        Note: After applying the PCA optimization technique, there appears to be less overlapping among the cluster distributions. Furthermore, the clusters are more distinct. Additionally, when reducing the dataset from seven columns to three columns, the k values remained the same.
 
 * Worked with tutor to create initial composite views and complete a cluster analysis.
