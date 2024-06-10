@@ -6,6 +6,8 @@ This activity was conducted to predict if cryptocurrencies are affected by 24-ho
 
 1. Normalized the data from the `crypto_market_data.csv` file using the `scikit-learn` [StandarScaler()] module.
 
+![Local Image](Data_Images/summary_statistics_df.png)
+
 2. Converted the scaled data into a DataFrame setting the index as the "coin-id" index from the original DataFrame.
 
 # Determine the best k-value using the original scaled data DataFrame.
