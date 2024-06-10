@@ -17,6 +17,8 @@ This activity was conducted to predict if cryptocurrencies are affected by 24-ho
 
     i. Plotted the elbow curve using a dictionary that included the inertia for each value of k from 1 to 11. 
 
+![Local Image](Data_Images/original_data_kvals.png)
+
 # Use K-means on the Original Scaled Data to Cluster Cryptocurrencies
 * Used the best k-value to cluster the cryptocurrencies on the original scaled data.
 
@@ -24,7 +26,9 @@ This activity was conducted to predict if cryptocurrencies are affected by 24-ho
 
     ii. Created a copy of the original DataFrame to include a column with the predicted clusters.
 
-1. Used hvPlot to create a scatter plot with the x and y-axis set to "PC1" and "PC2", respectively with an added "coin_id" `hover_cols` parameter represented for each data point. 
+1. Used hvPlot to create a scatter plot with the x and y-axis set to "price_change_percentage_24h" and "price_change_percentage_7d", respectively with an added "coin_id" `hover_cols` parameter represented for each data point.
+
+![Local Image](Data_Images/market_data_scatter.png)
 
 
 # Optimize Clusters with Principal Component Analysis
@@ -36,10 +40,14 @@ This activity was conducted to predict if cryptocurrencies are affected by 24-ho
 
     ii. Converted the PCA data into a DataFrame setting the index as the "coin-id" index from the original DataFrame.
 
+![Local Image](Data_Images/pca_data_df.png)
+
 # Determine the best k-value using the PCA data DataFrame.
 * Used the elbow method in the PCA data.
 
     i. Plotted the elbow curve using a dictionary that included the inertia for each value of k from 1 to 11. 
+
+![Local Image](Data_Images/pca_data_kvals.png)
 
         a. Analyized the difference between this k value and the one found using the original data.
 
@@ -50,7 +58,11 @@ This activity was conducted to predict if cryptocurrencies are affected by 24-ho
 
     ii. Created a copy of the PCA data DataFrame to include a column with the predicted clusters.
 
-1. Used hvPlot to create a scatter plot with the x and y-axis set to "price_change_percentage_24h" and "price_change_percentage_7d", respectively with an added "coin_id" `hover_cols` parameter represented for each data point.
+![Local Image](Data_Images/pca_data_plus_predict.png)
+
+1. Used hvPlot to create a scatter plot with the x and y-axis set to "PC1" and "PC2", respectively with an added "coin_id" `hover_cols` parameter represented for each data point. 
+
+![Local Image](Data_Images/pca_data_scatter.png)
 
     i. Discovered the impact of using K-means with fewer features to cluster the data. 
 
